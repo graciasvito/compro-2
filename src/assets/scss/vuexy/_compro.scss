@@ -720,11 +720,11 @@
       // overflow-x: scroll; /* Enable horizontal scrolling */
       white-space: nowrap; /* Prevent images from wrapping to the next line */
       gap: 1rem; /* Optional: to add space between images */
-      width: 1200px;
+      width: 80vw;
       // background-color: black;
 
       img {
-        width: 300px; /* Adjust width of images */
+        width: 20vw; /* Adjust width of images */
         height: auto; /* Ensure images maintain aspect ratio */
         object-fit: cover; /* Optional: for image scaling */
         transform: scale(1);
@@ -896,5 +896,48 @@
 
   .compro-landing-header {
     height: fit-content;
+  }
+
+  .compro-porto-content {
+    padding: 2rem 5vw;
+    flex-direction: column;
+  }
+
+  .compro2-portfolio-detail {
+    // padding: 5rem;
+
+    .main-title {
+      height: 80vh;
+
+      flex-direction: column;
+      .description {
+        padding: 15rem 2.5rem;
+        width: 100vw;
+        h1 {
+          font-size: 30px;
+          font-weight: 700;
+          color: #dddddd;
+        }
+
+        p {
+          color: #999696;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .gallery {
+      padding: 5rem 0;
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .img-container {
+        img:hover {
+          transform: scale(1.4);
+        }
+      }
+    }
   }
 }

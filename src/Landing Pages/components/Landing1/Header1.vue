@@ -3,11 +3,10 @@
     <vs-navbar class="nabarx" text-color="rgba(255,255,255,.6)">
       <div slot="title">
         <vs-navbar-title>
-          <div class="row align-center">
+          <div class="row align-center" @click="toHome">
             <img
               src="../content/Logo Jala Bumi Perkasa.png"
-              style="width: 50px"
-              @click="toHome"
+              style="width: 50px; cursor: pointer"
             />
             <h2>PT. Jala Bumi Perkasa</h2>
           </div>

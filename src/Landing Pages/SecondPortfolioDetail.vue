@@ -17,30 +17,30 @@ export default {
     Footer1,
     PortfolioDetail,
   },
-  data() {
-    return {
-      portfolioDetail: {},
-    };
-  },
-  computed: {
-    portfolio() {
-      return JSON.parse(localStorage.getItem("portfolioList"));
-    },
-    portfolioId() {
-      return localStorage.getItem("portfolioId");
-    },
-  },
-  mounted() {
-    this.getPortfolio();
-  },
-  methods: {
-    getPortfolio() {
-      //   console.log(this.portfolio);
-      this.portfolioDetail = this.portfolio.find(
-        (item) => item.id === this.portfolioId
-      );
-      console.log(this.portfolioDetail);
-    },
-  },
+  // data() {
+  //   return {
+  //     portfolioDetail: {},
+  //   };
+  // },
+  // computed: {
+  //   portfolio() {
+  //     return JSON.parse(localStorage.getItem("portfolioList"));
+  //   },
+  //   portfolioId() {
+  //     return localStorage.getItem("portfolioId");
+  //   },
+  // },
+  // mounted() {
+  //   this.getPortfolio();
+  // },
+  // methods: {
+  //   getPortfolio() {
+  //     //   console.log(this.portfolio);
+  //     this.portfolioDetail = this.portfolio.find(
+  //       (item) => item.id === this.portfolioId
+  //     );
+  //     console.log(this.portfolioDetail);
+  //   },
+  // },
 };
 </script>

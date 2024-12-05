@@ -512,7 +512,7 @@
 .compro2-portfolio {
   background-color: #3e6d9c;
   padding: 5rem;
-  height: 80vh;
+  height: 90vh;
 
   h1 {
     font-size: 32px;
@@ -574,6 +574,27 @@
       }
     }
   }
+
+  .view-more {
+    margin-top: 2.5rem;
+    // background-color: black;
+    display: flex;
+    justify-content: center;
+    // margin-bottom: 50rem;
+    p {
+      border: 2px solid rgb(217, 217, 217);
+      padding: 1rem;
+      border-radius: 10px;
+      width: fit-content;
+      color: rgb(217, 217, 217);
+      transition: 0.2s ease-in;
+    }
+
+    p:hover {
+      background-color: rgb(217, 217, 217);
+      color: #000000;
+    }
+  }
 }
 
 .compro-porto-content {
@@ -630,6 +651,94 @@
     }
   }
 }
+
+.compro2-portfolio-detail {
+  // padding: 5rem;
+
+  .main-title {
+    background-color: #000000;
+    height: 80vh;
+    display: flex;
+    // padding: 5rem;
+    .description {
+      // background-color: red;
+      // margin: 5rem;
+      padding: 15rem 5rem;
+      width: 70vw;
+      h1 {
+        font-size: 36px;
+        font-weight: 700;
+        color: #dddddd;
+      }
+
+      p {
+        color: #999696;
+        font-size: 16px;
+      }
+    }
+
+    .main-image {
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 30vw;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Black overlay with 70% opacity */
+        z-index: 1; /* Ensures overlay is above the background */
+      }
+    }
+  }
+
+  .gallery {
+    padding: 5rem 0;
+
+    h1 {
+      // background-color: violet;
+      text-align: center;
+      // padding-top: 5rem;
+      font-size: 36px;
+      margin-bottom: 5rem;
+      font-style: italic;
+    }
+
+    .img-container {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      // overflow-x: scroll; /* Enable horizontal scrolling */
+      white-space: nowrap; /* Prevent images from wrapping to the next line */
+      gap: 1rem; /* Optional: to add space between images */
+      width: 1200px;
+      // background-color: black;
+
+      img {
+        width: 300px; /* Adjust width of images */
+        height: auto; /* Ensure images maintain aspect ratio */
+        object-fit: cover; /* Optional: for image scaling */
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+// :style="{ backgroundImage: `url(${portfolioDetail.image})` }"
 
 @keyframes moveUp {
   from {

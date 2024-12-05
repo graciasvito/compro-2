@@ -32,10 +32,10 @@
         </div>
       </div>
       <div class="carrer-footer">
-        <h2>Carrer</h2>
+        <h2>Career</h2>
         <div class="list-menu">
           <ul>
-            <li><a href="/"> Carrer Development</a></li>
+            <li><a href="/"> Career Development</a></li>
             <li><a href="/"> Internship</a></li>
           </ul>
         </div>

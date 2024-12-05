@@ -1,0 +1,74 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.ev-header {
+  height: 10vh;
+  padding: 0 1.725rem;
+
+  img {
+    // background-color: aqua;
+    // height: 4x0px;
+  }
+
+  .starlink-icon {
+    width: 7.5%;
+  }
+  .lima-rempah-icon {
+    width: auto;
+    height: auto;
+  }
+  .vs-con-dropdown {
+    .a-icon {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.lima-landing-header {
+  // background-color: $white;
+
+  .vx-navbar {
+    .vs-con-items {
+      width: 100%;
+    }
+
+    .navbar-hero {
+      a {
+        color: $rempah-primary;
+        font-weight: 700;
+      }
+
+      .garis {
+        text-decoration-line: underline;
+        text-decoration-thickness: 1.7px;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ev-header {
+    // background-color: black;
+    width: 100vw;
+
+    .pln-icon {
+      width: 25vw;
+    }
+    .ev-icon {
+      display: none;
+    }
+
+    .mobile-menu {
+      display: inline;
+    }
+    // .mobile-dropdown-menu {
+    // }
+  }
+}

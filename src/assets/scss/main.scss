@@ -1,0 +1,40 @@
+/*=========================================================================================
+  File Name: main.scss
+  Description: Main scss file. Imports other scss partials from 'vuexy' folder
+  ----------------------------------------------------------------------------------------
+  Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+  Author: Pixinvent
+  Author URL: http://www.themeforest.net/user/pixinvent
+==========================================================================================*/
+
+@import "vuexy/variables";
+
+@import "vuexy/layout";
+@import "vuexy/typography";
+@import "vuexy/misc";
+@import "vuexy/extraComponents";
+@import "vuexy/themes";
+@import "vuexy/transitions";
+@import "vuexy/responsive";
+@import "vuexy/compro";
+
+@import "vuexy/customClasses";
+
+// Vuesax fixes and enhancments
+@import "vuexy/fixesVuesax";
+
+// Tailwind Fixes
+@import "vuexy/tailwindFix";
+
+// rtl
+@import "vuexy/rtl";
+
+// EV Plus
+@import "vuexy/evPlus/header";
+@import "vuexy/evPlus/tab";
+@import "vuexy/evPlus/evCustomClass";
+@import "vuexy/evPlus/MainContent";
+@import "vuexy/evPlus/landingPage";
+@import "vuexy/evPlus/sidebar";
+@import "vuexy/evPlus/richText";
+@import "vuexy/evPlus/fullCalendar";

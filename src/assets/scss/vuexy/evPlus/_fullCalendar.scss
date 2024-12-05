@@ -1,0 +1,99 @@
+.fc {
+  /* margin-top: 1rem; */
+  /* max-width: 80%; */
+  width: 80%;
+  /* background-color: black; */
+  margin: 2rem auto;
+}
+
+.fc .fc-col-header-cell-cushion {
+  color: white;
+  margin-top: 15px;
+}
+
+.fc-button {
+  background-color: $rempah-primary;
+}
+
+.fc .fc-daygrid-day-number {
+  color: black;
+  font-weight: bold;
+}
+.fc .fc-scrollgrid-section {
+  background-color: white;
+}
+.fc-day-past {
+  background-color: #f4f5f8;
+}
+.fc-day-other {
+  color: black;
+  background-color: #f4f5f8;
+}
+.fc-day-future {
+  color: black;
+  background-color: #f4f5f8;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border: 2px solid #ffffff;
+}
+.fc-theme-standard th {
+  background-color: $rempah-primary;
+  /* height: 50px; */
+}
+.fc-day-today {
+  background: #e3f8ff !important;
+  /* border: none !important; */
+}
+
+.fc .event-in {
+  background-color: var(--primary-light-90, #18618e);
+  color: white;
+}
+
+.fc-daygrid-event:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.fc-event-title-container {
+  background-color: #18618e;
+}
+
+.clicked-event {
+  background-color: var(--primary-light-90, #e7f1f7) !important;
+}
+
+.fc .event-out {
+  background-color: #a70b0b;
+  color: white;
+}
+
+.fc-daygrid-event {
+  margin-bottom: 10px;
+}
+.fc-daygrid-event-dot {
+  display: none !important;
+}
+
+.inner-wrapper {
+  background-color: white;
+
+  border-radius: 8px;
+}
+.fc .fc-scrollgrid {
+  border-collapse: collapse;
+}
+.today-button {
+  margin-left: 20px;
+  width: 68px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: $rempah-primary;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}

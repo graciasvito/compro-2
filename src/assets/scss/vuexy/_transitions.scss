@@ -1,0 +1,322 @@
+/*=========================================================================================
+    File Name: _transitions.scss
+    Description: Transition styles
+    ----------------------------------------------------------------------------------------
+    Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+      Author: Pixinvent
+    Author URL: http://www.themeforest.net/user/pixinvent
+==========================================================================================*/
+
+// ///////////////////////////////////////////////
+// Zoom Fade
+// ///////////////////////////////////////////////
+.zoom-fade-enter-active,
+.zoom-fade-leave-active {
+  transition: transform 0.35s, opacity 0.28s ease-in-out;
+}
+.zoom-fade-enter {
+  transform: scale(0.97);
+  opacity: 0;
+}
+
+.zoom-fade-leave-to {
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+// ///////////////////////////////////////////////
+// Fade Regular
+// ///////////////////////////////////////////////
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.35s ease-in-out;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+// ///////////////////////////////////////////////
+// Page Slide
+// ///////////////////////////////////////////////
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: opacity 0.35s, transform 0.4s;
+}
+.slide-fade-enter {
+  opacity: 0;
+  transform: translateX(-30%);
+}
+
+.slide-fade-leave-to {
+  opacity: 0;
+  transform: translateX(30%);
+}
+
+// ///////////////////////////////////////////////
+// Zoom Out
+// ///////////////////////////////////////////////
+.zoom-out-enter-active,
+.zoom-out-leave-active {
+  transition: opacity 0.35s ease-in-out, transform 0.45s ease-out;
+}
+.zoom-out-enter,
+.zoom-out-leave-to {
+  opacity: 0;
+  transform: scale(0);
+}
+
+// ///////////////////////////////////////////////
+// Fade Bottom
+// ///////////////////////////////////////////////
+
+// Speed: 1x
+.fade-bottom-enter-active,
+.fade-bottom-leave-active {
+  transition: opacity 0.3s, transform 0.35s;
+}
+.fade-bottom-enter {
+  opacity: 0;
+  transform: translateY(-8%);
+}
+
+.fade-bottom-leave-to {
+  opacity: 0;
+  transform: translateY(8%);
+}
+
+// Speed: 2x
+.fade-bottom-2x-enter-active,
+.fade-bottom-2x-leave-active {
+  transition: opacity 0.2s, transform 0.25s;
+}
+.fade-bottom-2x-enter {
+  opacity: 0;
+  transform: translateY(-4%);
+}
+
+.fade-bottom-2x-leave-to {
+  opacity: 0;
+  transform: translateY(4%);
+}
+
+// ///////////////////////////////////////////////
+// Fade Top
+// ///////////////////////////////////////////////
+
+// Speed: 1x
+.fade-top-enter-active,
+.fade-top-leave-active {
+  transition: opacity 0.3s, transform 0.35s;
+}
+.fade-top-enter {
+  opacity: 0;
+  transform: translateY(8%);
+}
+
+.fade-top-leave-to {
+  opacity: 0;
+  transform: translateY(-8%);
+}
+
+// Speed: 2x
+.fade-top-2x-enter-active,
+.fade-top-2x-leave-active {
+  transition: opacity 0.2s, transform 0.25s;
+}
+.fade-top-2x-enter {
+  opacity: 0;
+  transform: translateY(4%);
+}
+
+.fade-top-2x-leave-to {
+  opacity: 0;
+  transform: translateY(-4%);
+}
+
+///////////////////////////////////////////////////////////
+// transition-group : list;
+///////////////////////////////////////////////////////////
+.list-leave-active {
+  position: absolute;
+}
+
+.list-enter,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+///////////////////////////////////////////////////////////
+// transition-group : list-enter-up;
+///////////////////////////////////////////////////////////
+.list-enter-up-leave-active {
+  transition: none !important;
+}
+
+.list-enter-up-enter {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #5ab9f9;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 1s linear infinite;
+  margin: 50px auto;
+}
+
+.animated-text_word {
+  animation: fadeInFull 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.animated-desc_word {
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.pricing-animated {
+  opacity: 0;
+  animation: fadeInFull 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.animated-text .word:nth-child(1) {
+  display: inline-block;
+  white-space: pre; /* Preserve white spaces */
+
+  // transform: translateY(100%);
+  animation: moveUp 0.3s forwards;
+  animation-delay: 0.3s;
+}
+
+.animated-text .word:nth-child(2) {
+  display: inline-block;
+  white-space: pre; /* Preserve white spaces */
+
+  // transform: translateY(100%);
+  animation: moveUp 0.3s forwards;
+  animation-delay: 0.6s;
+}
+
+.animated-text .word:nth-child(3) {
+  display: inline-block;
+  white-space: pre; /* Preserve white spaces */
+
+  // transform: translateY(100%);
+  animation: moveUp 0.3s forwards;
+  animation-delay: 1s;
+}
+
+.animated-desc {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.5s;
+}
+
+// landing secondary
+
+.visible:nth-child(1) {
+  animation: none;
+}
+.visible:nth-child(2) {
+  animation: none;
+}
+.visible:nth-child(3) {
+  animation: none;
+}
+.visible:nth-child(4) {
+  animation: none;
+}
+// landing started
+
+.animateLeft {
+  animation: moveRight 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  animation-delay: 0.5s;
+}
+.animateRight {
+  animation: moveLeft 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  animation-delay: 0.5s;
+}
+
+// about us
+
+.about-animation {
+  animation: fadeInFull 1s forwards;
+  animation-delay: 0.5s;
+}
+// .aboutLeftFirst {
+//   animation: moveRight 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+//   animation-delay: 2s;
+// }
+// .aboutRight {
+//   animation: moveLeft 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+//   animation-delay: 2.6s;
+// }
+// .aboutLeftSecond {
+//   animation: moveRight 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+//   animation-delay: 3.3s;
+// }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes moveRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes moveLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFull {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

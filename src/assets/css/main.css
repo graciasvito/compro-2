@@ -1,0 +1,202 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, you should import this line from it's own file:
+ *
+ * @import "./tailwind-preflight.css";
+ *
+ * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
+ */
+/*NOTE: 'preflight' IS RENAMED TO 'base'*/
+/*@tailwind base;*/
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+@tailwind components;
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, you should import this line from it's own file:
+ *
+ * @import "./tailwind-utilities.css";
+ *
+ * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
+ */
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
+
+.text-green {
+  color: green;
+}
+.text-red {
+  color: red;
+}
+.text-orange {
+  color: #f2931f;
+}
+.text-blue {
+  color: #1372ac;
+}
+.text-back {
+  color: #051351;
+}
+
+.dashboard-text-green {
+  color: #0c924a;
+}
+
+.dashboard-text-purple {
+  color: #7839d1;
+}
+
+.dashboard-text-purple {
+  color: #7839d1;
+}
+
+.dashboard-text-orange {
+  color: #c07b14;
+}
+
+.dashboard-text-blue {
+  color: #277ab7;
+}
+
+.dashboard-text-yellow {
+  color: #c1b727;
+}
+
+.dashboard-total {
+  color: #e0891f;
+}
+
+.dashboard-new-regis {
+  color: #f2381f;
+}
+
+@media print {
+  @page {
+    margin: 0;
+  }
+  body * {
+    visibility: hidden;
+  }
+  #content-area {
+    margin-left: 0 !important;
+  }
+  #section-print,
+  #section-print * {
+    visibility: visible;
+  }
+  #section-print {
+    display: block !important;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 78%;
+  }
+  .title-print {
+    display: block;
+  }
+  .title-print .title {
+    font-size: 24pt !important;
+    font-weight: 700;
+  }
+}
+
+@media screen {
+  body * {
+    visibility: visible;
+  }
+  #section-print,
+  #section-print * {
+    visibility: visible;
+    position: relative;
+  }
+  .title-print {
+    display: none;
+  }
+}
+
+.vs-button-text.vs-button--text {
+  display: flex;
+  align-items: center;
+}
+
+.vs-button-text.vs-button--text span {
+  padding-right: 8px;
+}
+
+th.text-center .vs-table-text {
+  justify-content: center;
+}
+
+.v-select .vs__dropdown-toggle .vs__search {
+  color: #cccccc;
+}
+.v-select .vs__selected {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.v-select .vs__dropdown-toggle {
+  height: 39px;
+}
+/* .mx-input-wrapper input {
+  height: 39px;
+  border-radius: 20px;
+} */
+ .custom-date-picker .mx-input-wrapper input {
+   height: 39px;
+   border-radius: 20px;
+ }
+.mx-input-wrapper input {
+  height: 36px;
+  border-radius: 8px;
+}
+.mx-input-wrapper input::placeholder {
+  color: #cccccc;
+}
+.vs-button-custom {
+  width: 200px;
+  height: 40px;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vs-button-color {
+}

@@ -1,0 +1,42 @@
+.main-content {
+  width: 79vw;
+  min-height: 100vh;
+  // border: 2px solid #fff;
+  box-shadow: 0 0 10px #c6c6c6;
+  background-color: white;
+  padding: 2rem;
+
+  .burger-button {
+    display: none;
+  }
+}
+.form-title {
+  color: #632f08;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    width: 97.5%;
+    padding-left: 5rem;
+    .burger-button {
+      display: block;
+      background-color: white;
+      border: none;
+      // width: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .main-content {
+    width: 93vw;
+    padding-left: 5rem;
+    .burger-button {
+      display: block;
+      background-color: white;
+      border: none;
+      // width: 50px;
+    }
+  }
+}

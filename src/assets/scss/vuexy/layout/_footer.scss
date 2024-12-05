@@ -1,0 +1,146 @@
+/*=========================================================================================
+    File Name: _footer.scss
+    Description: Footer styles
+    ----------------------------------------------------------------------------------------
+    Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+      Author: Pixinvent
+    Author URL: http://www.themeforest.net/user/pixinvent
+==========================================================================================*/
+
+.footer-sticky {
+  .the-footer {
+    position: fixed;
+    background: $white;
+    bottom: 0;
+    width: calc(100% - 260px);
+    box-shadow: 0 -4px 20px 0 rgba(0, 0, 0, 0.05);
+    z-index: 40000;
+  }
+
+  .content-area-lg {
+    .the-footer {
+      width: calc(100% - 80px);
+    }
+  }
+
+  .content-area-full {
+    .the-footer {
+      width: 100%;
+    }
+  }
+
+  .router-view {
+    padding-bottom: 5rem;
+  }
+}
+
+.footer-hidden {
+  .the-footer {
+    display: none;
+  }
+}
+
+.the-footer {
+  padding: 1rem 2.2rem;
+}
+
+.landing-footer-container {
+  // text-align: justify;
+  // display: flex;
+  padding: 0 2rem;
+  // justify-content: space-between;
+  // min-height: 150px;
+  background-color: #f0f0f0;
+
+  .content-container {
+    .logo {
+      padding: 1rem 0;
+      img {
+        width: 30vw;
+      }
+    }
+
+    .contact {
+      .title {
+        color: $rempah-primary;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 7.5px;
+
+        a {
+          color: $rempah-brown;
+        }
+      }
+    }
+
+    .powered {
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+      text-align: right;
+      color: $rempah-brown;
+      font-size: 12px;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .landing-footer-container {
+    // text-align: justify;
+    // display: flex;
+    padding: 0 2rem;
+    // justify-content: space-between;
+    // min-height: 150px;
+    background-color: #f0f0f0;
+
+    .content-container {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      .logo {
+        padding: 1rem 0;
+        img {
+          width: 12vw;
+        }
+      }
+
+      .contact {
+        .title {
+          color: $rempah-primary;
+          font-weight: 700;
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 7.5px;
+
+          a {
+            color: $rempah-brown;
+          }
+        }
+      }
+
+      .powered {
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: right;
+        color: $rempah-brown;
+        font-size: 12px;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

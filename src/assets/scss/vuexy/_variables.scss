@@ -1,0 +1,111 @@
+/*=========================================================================================
+    File Name: _variables.scss
+    Description: partial- SCSS varibales
+    ----------------------------------------------------------------------------------------
+    Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+      Author: Pixinvent
+    Author URL: http://www.themeforest.net/user/pixinvent
+==========================================================================================*/
+
+/*========================================================
+        SPACING
+=========================================================*/
+
+$spacer: 2.2rem;
+$spacer-sm: ($spacer / 2);
+$spacer-lg: ($spacer * 2);
+
+/*========================================================
+        COLORS
+=========================================================*/
+
+$primary: #1372ac;
+$success: #118a83;
+$danger: #ff3b3b;
+$warning: #ffcc00;
+$dark: #1e1e1e;
+$grey: #b8c2cc;
+$grey-light: #dae1e7;
+$white: #fff;
+$black: #22292f;
+
+$rempah-primary: #118a83;
+$rempah-brown: #632f08;
+$rempah-danger: #ff0404;
+$rempah-gold: #dcbf28;
+$rempah-grey: #949191;
+$grey-light: #dae1e7;
+$rempah-yellow: #ffd84f;
+
+/*========================================================
+        TYPOGRAPHY
+=========================================================*/
+
+$font-family-sans-serif: "Inter", sans-serif !default;
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+
+$font-size-base: 14px !default;
+$font-size-large: ceil(($font-size-base * 1.25)) !default;
+$font-size-small: ceil(($font-size-base * 0.85)) !default;
+
+$h1-font-size: $font-size-base * 2; // 28
+$h2-font-size: $font-size-base * 1.74; // 24.36
+$h3-font-size: $font-size-base * 1.51; // 21.98
+$h4-font-size: $font-size-base * 1.32; // 18.48
+$h5-font-size: $font-size-base * 1.14; // 15.96
+$h6-font-size: $font-size-base; // 14
+
+$h1-font-size-large: $font-size-large * 2; // 56
+$h2-font-size-large: $font-size-large * 1.74; // 48.72
+$h3-font-size-large: $font-size-large * 1.51; // 42.28
+$h4-font-size-large: $font-size-large * 1.32; // 36.96
+$h5-font-size-large: $font-size-large * 1.14; // 31.92
+$h6-font-size-large: $font-size-large; // 28
+
+$line-height-base: 1.625rem !default;
+
+$headings-font-family: inherit !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.2 !default;
+$headings-color: #2c2c2c;
+$headings-margin-bottom: ($spacer / 2) !default;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.45;
+
+$content-color: #626262;
+$theme-background: #f8f8f8;
+
+/*========================================================
+        TYPOGRAPHY
+=========================================================*/
+
+$reduced-sidebar-width: 80px;
+
+/*========================================================
+        DARK THEME
+=========================================================*/
+
+$sidebar-dark-bg: #10163a;
+$content-dark-bg: #262c49;
+$dark-card-color: #10163a;
+$table-dark-stripe: #212744;
+$table-light-stripe: #262c49;
+$grid-dark-color: #343661;
+
+$theme-light-dark-bg: #262c49;
+$theme-dark-bg: #10163a;
+$theme-dark-secondary-bg: #171e49;
+$theme-dark-text-color: #c2c6dc;
+$theme-dark-heading-color: #ebeefd;
+// $theme-dark-heading-color: #C9CAD2;
+$theme-dark-border-color: #414561;
+$theme-dark-shadow-color: #0c112e;

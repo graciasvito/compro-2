@@ -1,0 +1,291 @@
+.row {
+  display: flex;
+}
+
+.row-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-mobile {
+  display: flex;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.just-center {
+  justify-content: center;
+}
+
+.just-end {
+  justify-content: flex-end;
+}
+
+.just-between {
+  justify-content: space-between;
+}
+
+.just-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+// .container-normal {
+//   // margin: 0 5rem;
+// }
+
+.paddingx-1 {
+  padding: 1rem 0;
+}
+
+.paddingx-2 {
+  padding: 2rem 0;
+}
+
+.paddingx-3 {
+  padding: 3rem 0;
+}
+
+.paddingx-4 {
+  padding: 4rem 0;
+}
+
+.paddingx-5 {
+  padding: 5rem 0;
+}
+
+.container-less {
+  margin: 0 2rem;
+}
+
+.container-plus {
+  margin: 0 7rem;
+}
+
+.padding-normal {
+  padding: 0 5rem;
+}
+
+.padding-less {
+  padding: 0 2rem;
+}
+
+.padding-plus {
+  padding: 0 7rem;
+}
+
+.separator {
+  width: 90vw;
+  height: 5px;
+  opacity: 0.1;
+  background: #ffffff;
+  margin: 0 auto;
+}
+
+.rempah-bg--login {
+  height: 100vh;
+  background-image: url("../images/logo/bg-login-daun.png");
+  background-size: 100vw 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .login-box {
+    background-color: white;
+    border-radius: 10px;
+    width: 55vw;
+    height: 70vh;
+    border: 1px solid $rempah-primary;
+
+    .login-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 300px;
+      }
+
+      .login-form {
+        width: 60%;
+
+        h3 {
+          font-weight: 600;
+        }
+
+        h3::before {
+          content: "Hello, ";
+          font-size: 24px;
+        }
+
+        .custom-input-container {
+          margin-top: 20px;
+
+          label {
+            color: $rempah-primary;
+            font-weight: 700;
+          }
+          .input-container {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid green;
+            // background-color: black;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+          }
+
+          input {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            transition: border-color 2s ease;
+          }
+
+          .input-error {
+            border-color: red;
+          }
+        }
+      }
+    }
+  }
+
+  .starlink-logo {
+    padding-top: 8vh;
+    width: 10vw;
+  }
+}
+
+//add calendar
+.add-calendar {
+  .prov-city {
+    padding: 1rem;
+    .select-prov {
+      .parent {
+        background-color: $rempah-grey;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 5px;
+      }
+
+      width: 17.5vw;
+      // text-align: center;
+    }
+
+    .trash-button {
+      background-color: #b92c2c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+  }
+}
+
+//TABLE STYLING
+.table-header-style {
+  white-space: nowrap;
+}
+//TABLE STYLING
+
+.gap-mini {
+  gap: 5px;
+}
+
+.gap-medium {
+  gap: 1rem;
+}
+
+.gap-large {
+  gap: 1.5rem;
+}
+
+.gap-xl {
+  gap: 2rem;
+}
+
+.gap-super {
+  gap: 8rem;
+}
+
+.text-semibold {
+  font-weight: 500;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-bolder {
+  font-weight: 700;
+}
+
+.text-extra-bold {
+  font-weight: 800;
+}
+
+.vs-switch:disabled {
+  opacity: 0.7;
+  background-color: grey;
+}
+
+@media screen and (max-width: 768px) {
+  .container-normal {
+    margin: 0 1.5rem;
+  }
+
+  .row-mobile {
+    flex-direction: column;
+  }
+
+  // login
+  .rempah-bg--login {
+    background-size: 100vw 100vh;
+    align-items: center;
+
+    .login-box {
+      width: 80vw;
+      height: 75vh;
+      margin-top: 7.5vh;
+
+      // .login-content {
+      //   img {
+      //   }
+      // }
+    }
+    .starlink-logo {
+      padding-top: 8vh;
+      width: 25vw;
+    }
+  }
+}
+
+// Radio Button
+.radio-container {
+  flex: 0.25;
+  display: flex;
+  align-items: center;
+}
+
+.radio-custom {
+  margin-right: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.input-date {
+  .date-input-custom {
+    width: 100%;
+  }
+}
+
+.testzzz {
+  width: 20px;
+}

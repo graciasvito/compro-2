@@ -1,0 +1,137 @@
+.main-row {
+  display: inline;
+}
+
+.ev-sidebar {
+  display: flex;
+  position: fixed;
+  left: 0;
+  z-index: 1000;
+  width: 60vw;
+  transform: translateX(-50vw);
+  transition: transform 250ms ease-in-out;
+  background-color: #118a83;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  img {
+    // background-color: black;
+    width: 100%;
+  }
+  .sidebar-content {
+    padding: 0 1rem;
+    p {
+      color: white;
+    }
+
+    .sidebar-active-link {
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: #fff;
+      text-decoration-thickness: 2px;
+    }
+
+    .sidebar-link {
+      font-weight: 500;
+    }
+
+    .button-collapse {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 2.5rem;
+    }
+
+    .burger-button {
+      background-color: #118a83;
+      border: none;
+      h1 {
+        color: white;
+      }
+
+      // width: 50px;
+    }
+
+    .children-tab {
+      margin-left: 10vw;
+    }
+  }
+}
+
+.ev-sidebar.is-open {
+  transform: translateX(0);
+}
+@media screen and (min-width: 768px) {
+  .main-row {
+    display: flex;
+  }
+  .ev-sidebar {
+    position: fixed;
+    width: 15vw;
+    transform: translateX(0);
+    transition: transform 500ms ease-in-out;
+
+    img {
+      // background-color: black;
+      height: 30vh;
+    }
+
+    .sidebar-content {
+      p {
+        font-size: 1.25rem;
+      }
+
+      .button-collapse {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 2.5rem;
+      }
+      .children-tab {
+        margin-left: 2.75vw;
+      }
+
+      .just-icon_mbl {
+        flex-direction: row;
+      }
+    }
+  }
+
+  .ev-sidebar.icon-only {
+    width: 5vw;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .main-row {
+    display: flex;
+  }
+  .ev-sidebar {
+    position: static;
+    width: 15vw;
+    // transform: translateX(0);
+
+    img {
+      // background-color: black;
+      height: 30vh;
+    }
+
+    .sidebar-content {
+      p {
+        font-size: 1.25rem;
+      }
+
+      // .burger-button {
+      //   display: none;
+
+      //   // width: 50px;
+      // }
+      .children-tab {
+        margin-left: 2.75vw;
+      }
+
+      .just-icon_mbl {
+        flex-direction: row;
+      }
+    }
+  }
+}
